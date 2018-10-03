@@ -11,3 +11,15 @@
 </table>
 
 =end
+
+puts "<table><tbody><tr>"
+
+for i in 1..3
+puts "<td> #{i} </td>"
+
+end
+
+
+puts "</tr></tbody></table>"
+
+
