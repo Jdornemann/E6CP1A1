@@ -24,3 +24,27 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+
+tag = {tabla: '<table>',tbody: '<tbody>', tr: '<tr>', td: '<td>'}
+
+
+contador = 1
+resultado = '<table><tbody>'
+4.times do |x|
+  resultado += '<tr>'
+    x+=1
+    4.times do |y|
+        y+= 1
+       resultado +=  '<td>' + (contador).to_s + '</td>'
+       contador += 1
+
+    end
+
+    print resultado
+    resultado = '</tr>'
+   
+end
+
+resultado += '</tr></tbody></table>'
+print resultado
